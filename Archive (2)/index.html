@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        table {
+            width: 70%;
+            margin: 50px auto;
+
+            tr {
+                background-color: #c4c4c4;
+
+                th,
+                td {
+                    padding: 10px;
+                    text-align: start;
+                }
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <button id="one">show all</button>
+        <button id="two">show five</button>
+        <button id="menu">menu</button>
+    </center>
+
+    <aside>
+        <div class="info">
+            <span>cart</span>
+            <button id="close">close</button>
+        </div>
+
+        <div class="list">
+            <div class="scrollable-list">
+                <div class="item">
+                    <div class="left">
+                        <div class="box_left">
+                            <span class="tovar">Товар</span>
+                            <img src="./img/bag.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <button id = "plus">+</button>
+                        <span id = "total">0</span>
+                        <button id = "minus">-</button>
+                    </div>
+                    <div class="right">
+                        <div class="box_right">
+                            <span>Удалить</span>
+                            <button id="remove">remove</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="show_total"></div>
+    </aside>
+
+    <div class="container">
+
+    </div>
+
+    <script src="./components/db.js"></script>
+    <script src="./components/Item.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
